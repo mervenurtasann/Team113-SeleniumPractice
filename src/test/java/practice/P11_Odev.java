@@ -28,7 +28,7 @@ public class P11_Odev extends TestBase {
         // Para birimlerinin karsilastirmasini alin
         aramaKutusu.submit();
         WebElement sonuc = driver.findElement(By.xpath("//span[@class='DFlfde SwHCTb']"));
-        String actualSonuc = sonuc.getText().replaceAll("\\D", "");
+        String actualSonuc = sonuc.getText().replaceAll("\\D", ".");
         double actualSonucc = Double.parseDouble(actualSonuc);
         double expectedSonuc = 1.5;
 
